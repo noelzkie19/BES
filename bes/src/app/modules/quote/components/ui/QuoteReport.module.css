@@ -1,0 +1,21 @@
+.quoteReport {
+    padding: 40px;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    width: 100%;
+}
+
+    .quoteReport b {
+        font-weight: bold;
+    }
+
+    .quoteReport table th,
+    .quoteReport table td {
+        border: 1px solid #000;
+        padding: 2px;
+    }
+
+    .quoteReport p,
+    .quoteReport li {
+        letter-spacing: calc(-1px / 64) !important;
+    }

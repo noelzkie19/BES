@@ -1,0 +1,15 @@
+C:\Users\Noel\Documents\bes-management-system\src\Application\bin\Release\net6.0\BES.Application.deps.json
+C:\Users\Noel\Documents\bes-management-system\src\Application\bin\Release\net6.0\BES.Application.dll
+C:\Users\Noel\Documents\bes-management-system\src\Application\bin\Release\net6.0\BES.Application.pdb
+C:\Users\Noel\Documents\bes-management-system\src\Application\bin\Release\net6.0\BES.Domain.dll
+C:\Users\Noel\Documents\bes-management-system\src\Application\bin\Release\net6.0\BES.Domain.pdb
+C:\Users\Noel\Documents\bes-management-system\src\Application\obj\Release\net6.0\Application.csproj.AssemblyReference.cache
+C:\Users\Noel\Documents\bes-management-system\src\Application\obj\Release\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noel\Documents\bes-management-system\src\Application\obj\Release\net6.0\Application.AssemblyInfoInputs.cache
+C:\Users\Noel\Documents\bes-management-system\src\Application\obj\Release\net6.0\Application.AssemblyInfo.cs
+C:\Users\Noel\Documents\bes-management-system\src\Application\obj\Release\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\Noel\Documents\bes-management-system\src\Application\obj\Release\net6.0\Application.csproj.CopyComplete
+C:\Users\Noel\Documents\bes-management-system\src\Application\obj\Release\net6.0\BES.Application.dll
+C:\Users\Noel\Documents\bes-management-system\src\Application\obj\Release\net6.0\refint\BES.Application.dll
+C:\Users\Noel\Documents\bes-management-system\src\Application\obj\Release\net6.0\BES.Application.pdb
+C:\Users\Noel\Documents\bes-management-system\src\Application\obj\Release\net6.0\ref\BES.Application.dll

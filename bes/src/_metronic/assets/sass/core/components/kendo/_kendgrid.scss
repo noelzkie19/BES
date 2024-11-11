@@ -1,0 +1,201 @@
+
+//kendo
+.k-column-title {
+  font-family: $font-family-sans-serif !important;
+  font-size: $root-font-size !important;
+}
+.k-input {
+    font-family: $font-family-sans-serif !important;
+    font-size: $root-font-size !important;
+  }
+ 
+  .k-input.k-datepicker.k-disabled {
+    color: black;
+  }
+  .k-window {
+    font-family: $font-family-sans-serif !important;
+    font-size: $root-font-size !important;
+  }
+  // .k-grid .k-grid-header .k-cell-inner .k-link {
+//   padding: 16px 24px !important;
+// }
+
+  .k-grid {
+    border: 1px solid #8c9091 !important;
+    font-family: $font-family-sans-serif !important;
+    font-size: $root-font-size !important;
+
+    .k-grid-header {
+      .k-header {
+        height: 25px;
+        padding: 0;
+        overflow: visible;
+        white-space: normal;
+      }
+      .k-header.custom-k-header{
+        .k-column-title {
+          white-space: break-spaces
+        }
+      }
+      .k-header > .k-link {
+        height: auto;
+        word-break:break-all !important;
+        word-wrap:break-word !important;
+        font-size: $root-font-size !important;
+      }
+      .k-grid-header-wrap {
+        background: #a4a8a9;
+        color: #fff;
+      }
+      .k-filtercell-operator,
+      .k-filtercell > .k-button {
+        display: NONE;
+      }
+      .k-filtercell > .k-input.k-datepicker {
+        border-bottom-right-radius: 5px !important;
+        border-bottom-left-radius: 5px !important;
+      }
+      .k-cell-inner {
+        .k-link {
+          padding: 16px 24px !important;
+        }
+      }
+    }
+    .k-grid-footer {
+      .k-grid-footer-wrap {
+        background: #d9d9d9;
+      }
+    }
+    .k-grid-content {
+      td {
+        border-left-color: #d9d9d9;
+      }
+      tr {
+        font-size: $root-font-size !important;
+        &.k-alt {
+          background: #f4f3fb;
+        }
+        td {
+          padding: 0 5px;
+          height: 5px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .custom-date-filter {
+      .k-button-icon.k-icon.k-i-calendar {
+        display: none;
+      }
+    }
+    .k-command-cell .k-input-value-text {
+      font-size: $root-font-size !important;
+      font-family: $font-family-sans-serif !important;
+    }
+    & .k-hierarchy-cell > .k-icon {
+      padding: 2px 0 !important;
+    }
+
+    tbody  {
+      tr {
+        line-height: 15px !important;
+        height: 15px !important;
+      }
+      td {
+        padding: 0;
+      }
+    }
+  }
+  
+  
+  .k-tabstrip {
+    .k-link {
+      padding: 9px 10px;
+    }
+    .k-tabstrip-items-wrapper {
+      .k-link {
+        height: 30px !important;
+      }
+      .k-item {
+        border-radius: 15px 15px 0 0 !important;
+      }
+      .k-active {
+        font-weight: bold;
+        background-color: #ff6601 !important;
+        color: white !important;
+        &::after {
+          border-color: #ff6601 !important;
+        }
+      }
+      &:hover {
+        border-radius: 5px 30px 0 0 !important;
+      }
+    }
+  }
+  
+  .k-calendar-container {
+    z-index: 99999999999 !important;
+  }
+  
+  .k-filter-row td, .k-filter-row th {
+    padding: 2px 5px !important;
+  }
+
+
+  input.k-input, textarea.k-textarea, .k-numerictextbox
+  .k-input.k-input-solid {
+    padding: 5px 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    background-color: $white !important;
+  }
+
+  .k-input.k-input-solid {
+    background-color: $white !important;
+    &.k-disabled{
+      background-color: #eff2f5 !important;
+    }
+  }
+
+  .k-grid td.k-command-cell {
+    padding: 0px 5px !important;
+  }
+
+  .k-input.k-input-solid:hover {
+    border-color: #e3e6ef !important;
+  }
+  .k-input-md .k-input-inner,
+  .k-picker-md .k-input-inner {
+    padding: $input-padding-y $input-padding-x !important;
+  }
+
+  .k-input-md .k-input-button {
+    padding: 0 0 !important;
+  }
+
+  .k-dialog-titlebar {
+    background: #1e2227;
+    color: #fff;
+  }
+  
+  .k-dropdownlist {
+    font-size: $root-font-size !important;
+    height: 20px;
+    &.k-picker-solid {
+      border: 1px solid #ddd !important;
+      border-radius: 5px !important;
+    }
+  }
+  
+  //kendo dropdown background
+  .k-animation-container-shown {
+    font-size: $root-font-size !important;
+    .k-list {
+      font-size: $root-font-size !important;
+      ul > li:hover {
+        color: #fff;
+        background-color: #ff6601;
+      }
+    }
+  }
+  

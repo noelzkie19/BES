@@ -1,0 +1,48 @@
+{
+  "ConnectionStrings": {
+<<<<<<< HEAD
+    "DefaultConnection": "Server=DESKTOP-A5A1GLA\\SQLEXPRESS;Database=bes_c9_staging_back;Trusted_Connection=True;MultipleActiveResultSets=true;user id=sa;password=admin1234;"
+=======
+    "DefaultConnection": "Server=DESKTOP-D54CTLJ;Database=bes_12082022;Trusted_Connection=True;MultipleActiveResultSets=true;user id=sa;password=admin1234;"
+>>>>>>> 4ed1444cb9720164fa82859ede95de27899e601f
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "Jwt": {
+    "Secret": "Jxc3KTQ7lO9BvfT9iCdb",
+    "ValidIssuer": "https://localhost:7195/",
+    "ValidAudience": "https://localhost:7195/"
+  },
+  "SmtpClient": {
+    "Host": "smtp.gmail.com",
+    "UserName": "carlo.bajac9@gmail.com",
+    "FromEmail": "no-reply@c9solutions.com.au",
+    "Password": "arqddcgikopfzewi",
+    "Port": 587
+  },
+  "ResetPasswordLink": "http://localhost:3011/auth/reset-password/verify",
+  "FileStorage": "C:\\Users\\Noel\\Documents\\bes-management-system\\src\\client\\public\\files\\Uploads",
+  "AllowedHosts": "*",
+  "CorsOrigins": "http://localhost:3011",
+  "Serilog": {
+    "using": ["Serilog.Sinks.File"],
+    "MinimumLevel": {
+      "Default": "Information"
+    },
+    "WriteTo": [
+      {
+        "Name": "File",
+        "Args": {
+          "Path": "C:\\bes-web\\ApiLog-.log",
+          "rollingInterval": "Day",
+          "outputTemplate": "[{Timestamp: yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{Newline}{Exception}]"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+.purchaseOrder *
+{
+   font-family: Helvetica !important;
+}
+
+.btn-row {
+    background: #ff5a00;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.purchaseOrder {
+    padding: 40px;
+    font-size: 12px;
+}
+
+    .purchaseOrder b {
+        font-weight: bold;
+    }
+
+    .purchaseOrder table th,
+    .purchaseOrder table td { 
+        padding: 2px;
+    }
+
+    .purchaseOrder p,
+    .purchaseOrder div,
+    .purchaseOrder label {
+        letter-spacing: calc(-1px / 64);
+    }
+
+    .purchaseOrder address,
+    .purchaseOrder address span {
+        letter-spacing: normal;
+    }

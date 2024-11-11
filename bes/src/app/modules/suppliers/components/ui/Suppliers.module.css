@@ -1,0 +1,16 @@
+﻿.suppliers {
+    padding: 40px !important;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    width: 100%;
+}
+
+    .suppliers b {
+        font-weight: bold;
+    }
+
+    .suppliers table th,
+    .suppliers table td {
+        border: 1px solid #000;
+        padding: 2px;
+    }

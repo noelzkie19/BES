@@ -1,0 +1,18 @@
+[
+    {
+        "code": "retraining",
+        "value": "Retraining"
+    },
+    {
+        "code": "changeProcedure",
+        "value": "Change Procedure"
+    },
+    {
+        "code": "introduceProcedure",
+        "value": "Introduce Procedure"
+    },
+    {
+        "code": "other",
+        "value": "Other"
+    }
+]

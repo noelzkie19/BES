@@ -1,0 +1,14 @@
+.deliveryList nav a[role="tab"] {
+  font-size: 11px;
+  font-stretch: 100%;
+  font-weight: 500;
+}
+
+  .deliveryList nav a[role="tab"][aria-selected="true"] {
+    color: #fff;
+    background-color: #ff6601;
+  }
+
+  .deliveryList nav a[role="tab"][aria-selected="false"] {
+    color: gray;
+  }

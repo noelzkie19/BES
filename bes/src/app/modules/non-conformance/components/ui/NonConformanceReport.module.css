@@ -1,0 +1,20 @@
+.nonConformance {
+  padding: 40px;
+  font-size: 12px;
+}
+
+.nonConformance b {
+  font-weight: bold;
+}
+.nonConformance table th,
+.nonConformance table td {
+  border: 1px solid #000;
+  padding: 15px;
+}
+.nonConformance table td .left {
+  float: left;
+}
+.nonConformance table td table td {
+  border: 0;
+  padding: 0;
+}

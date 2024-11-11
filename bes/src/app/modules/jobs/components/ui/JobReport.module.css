@@ -1,0 +1,19 @@
+.jobReport {
+  padding: 40px;
+  font-size: 12px;
+  width: 100%;
+}
+
+.jobReport b {
+  font-weight: bold;
+}
+.jobReport table th,
+.jobReport table td {
+  border: 1px solid #000;
+  padding: 2px;
+}
+
+
+.JobTab {
+  padding: 10px 5px 10px 5px;
+}

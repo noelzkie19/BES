@@ -1,0 +1,9 @@
+.login-aside {
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    max-width: 400px;
+  }
+  //background-image: url(/src/client/src/images/login-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

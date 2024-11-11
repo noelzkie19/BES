@@ -1,0 +1,31 @@
+.email-input-container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .email-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .email-token {
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .remove-icon {
+    margin-left: 4px;
+    cursor: pointer;
+  }
+  
+  .email-input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+  }

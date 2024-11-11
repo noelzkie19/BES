@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "npm install"
+npm install
+echo "npm audit fix --force"
+npm audit fix --force
+echo "npm start"
+npm start

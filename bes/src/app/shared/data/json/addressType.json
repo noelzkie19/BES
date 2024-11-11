@@ -1,0 +1,19 @@
+[
+    {
+        "code": "bil",
+        "value": "Billing Address"
+    },
+    {
+        "code": "bus",
+        "value": "Business Address"
+    },
+    
+    {
+        "code": "del",
+        "value": "Delivery Address"
+    },
+    {
+        "code": "pos",
+        "value": "Postal Address"
+    }
+]

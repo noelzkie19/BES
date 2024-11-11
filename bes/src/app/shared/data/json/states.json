@@ -1,0 +1,48 @@
+[
+    {
+        "code": "nsw",
+        "value": "New South Wales",
+        "postal": "NSW"
+    },
+    {
+        "code": "qld",
+        "value": "Queensland",
+        "postal": "QLD"
+    },
+    {
+        "code": "sa",
+        "value": "South Australia",
+        "postal": "SA"
+    },
+    {
+        "code": "tas",
+        "value": "Tasmania",
+        "postal": "TAS"
+    },
+    {
+        "code": "vic",
+        "value": "Victoria",
+        "postal": "VIC"
+    },
+  
+    {
+        "code": "wa",
+        "value": "Western Australia",
+        "postal": "WA"
+    } 
+    ,
+
+    {
+        "code": "act",
+        "value": "Australian Capital Territory",
+        "postal": "ACT"
+    }
+    ,
+
+    {
+        "code": "nt",
+        "value": "Northern Territory",
+        "postal": "NT"
+    }
+
+]

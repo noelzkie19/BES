@@ -1,0 +1,197 @@
+import { useForm } from "react-hook-form";
+import { Dialog, DialogActionsBar } from "@progress/kendo-react-dialogs";
+import { FC } from "react";
+import { IPurchaseReceiptData } from "../../models/purchase-model";
+import { transforQtyReceiveOption } from "../../transformer/purchase-transformer";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { purchaseReceiptFormValidationSchema } from "../../validators/purchase-receipt-form";
+
+interface IProps {
+    dataReceipt: IPurchaseReceiptData,
+    toggleDialog: () => void,
+    submit: (dataReceipt: IPurchaseReceiptData) => void
+}
+
+const ReceiptPurchaseItem: FC<IProps> = ({ dataReceipt, toggleDialog, submit }) => {
+
+    const { 
+        register, 
+        handleSubmit, 
+        formState: { errors },
+    } = useForm({
+        defaultValues: dataReceipt,
+        reValidateMode: 'onSubmit',
+        resolver: yupResolver(purchaseReceiptFormValidationSchema),
+    })
+
+    const onSubmit = (value: any) => {
+        submit(value)
+    }
+
+    return (
+<<<<<<< HEAD
+        <Dialog title='Receipt of Purchase Order Item' onClose={toggleDialog} height='90%'
+            >
+=======
+        <Dialog title='Receipt of Purchase Order Item' onClose={toggleDialog} height= '90%'
+           >
+>>>>>>> aa26bc0ee6d7028b9ec26dd8c27d67af7506efbc
+          
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <div className='modal-body'>
+                    
+                    <div className='grey-wrap bg-light p-5'>
+                        <div className="row">
+                            <div className="col-12 col-lg-6">
+                                <div className="d-flex flex-row">
+                                    <p className="font-weight-bold me-2">
+                                        Supplier:
+                                    </p>
+                                    <span>
+                                        {dataReceipt.supplierName}
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="col-12 col-lg-6">
+                                <div className="d-flex flex-row">
+                                    <p className="font-weight-bold me-2">
+                                        Job Number:
+                                    </p>
+                                    <span>
+                                        {dataReceipt.jobId}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12 col-lg-6">
+                                <div className="d-flex flex-row">
+                                    <p className="font-weight-bold me-2">
+                                        PO Number:
+                                    </p>
+                                    <span>
+                                        {dataReceipt.purchaseNumber}
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="col-12 col-lg-6">
+                                <div className="d-flex flex-row">
+                                    <p className="font-weight-bold me-2">
+                                        Client:
+                                    </p>
+                                    <span>
+                                        {dataReceipt.clientName}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12 col-lg-6">
+                                <div className="d-flex flex-row">
+                                    <p className="font-weight-bold me-2">
+                                        Item Description:
+                                    </p>
+                                    <span>
+                                        {dataReceipt.decription}
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="col-12 col-lg-6">
+                                <div className="d-flex flex-row">
+                                    <p className="font-weight-bold me-2">
+                                        Job Description:
+                                    </p>
+                                    <span>
+                                        {dataReceipt.jobDescription}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='grey-wrap bg-light p-5 mt-2'>
+                        <div className='row'>
+                            <div className='col col-6'>
+                                <div className='col col-12 pe-2  mb-4'>
+                                    <label className='form-label' htmlFor=''>
+                                        Order Quantity
+                                    </label>
+                                    <input type='number' className={`form-control`} 
+                                        {...register('poQuantity')} disabled/>
+                                </div>
+                                <div className='col col-12 pe-2  mb-4'>
+                                    <label className='form-label' >
+                                        Received Qty
+                                    </label>
+                                    <input type='number' 
+                                        className={`form-control${errors.quantity ? ' border-danger' : ''}`}
+                                        {...register('quantity', { valueAsNumber: true })} />
+                                </div>
+                                <div className='col col-12 pe-2  mb-4'>
+                                    <label className='form-label' htmlFor=''>
+                                        Packing Slip Number
+                                    </label>
+                                    <input type='text' 
+                                        className={`form-control${errors.packingSlipNumber ? ' border-danger' : ''}`}
+                                        {...register('packingSlipNumber')}/>
+                                </div>
+                                <div className='col col-12 pe-2  mb-4'>
+                                    <label className='form-label' htmlFor=''>
+                                        Heat Number
+                                    </label>
+                                    <input type='text' 
+                                        className={`form-control${errors.heatNumber ? ' border-danger' : ''}`}
+                                        {...register('heatNumber')}/>
+                                </div>
+                                <div className='col col-12 pe-2  mb-4'>
+                                    <label className='form-label' htmlFor=''>
+                                        Goods Inspected and received as correct by
+                                    </label>
+                                    <input type='text' 
+                                        className={`form-control${errors.goodInspctReceivedBy ? ' border-danger' : ''}`}
+                                        {...register('goodInspctReceivedBy')}/>
+                                </div>
+                            </div>
+                            <div className='col col-6'>
+                                <div className='col col-12 pe-2  mb-4'>
+                                    <label className='form-label' htmlFor=''>
+                                      Qty Previously Received
+                                    </label>
+                                    <select className={`form-control`}>
+                                        {(transforQtyReceiveOption(dataReceipt.historyReceipts) || [])
+                                            .map((data: any) => {
+                                              return  <option value={data.value}>{data.label}</option>
+                                        })}
+                                    </select>
+                                </div>
+                                <div className='col col-12 pe-2  mb-4'>
+                                    <label className='form-label' htmlFor=''>
+                                        Notes
+                                    </label>
+                                    <input className={`form-control`} 
+                                        {...register('note')}/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <DialogActionsBar>
+                    <button
+                        type="submit"
+                        className="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base">
+                        Save
+                    </button>
+                    <button
+                        className="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base"
+                        onClick={toggleDialog}
+                    >
+                        Cancel
+                    </button>
+                </DialogActionsBar>
+            </form>
+
+
+        </Dialog >
+    )
+}
+
+export { ReceiptPurchaseItem }

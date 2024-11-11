@@ -1,0 +1,19 @@
+.confirmJob {
+    padding: 40px;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+    .confirmJob b {
+        font-weight: bold;
+    }
+
+    .confirmJob table th,
+    .confirmJob table td {
+        border: 1px solid #000;
+        padding: 2px;
+    }
+
+    .confirmJob p {
+        letter-spacing: calc(-1px / 64) !important;
+    }

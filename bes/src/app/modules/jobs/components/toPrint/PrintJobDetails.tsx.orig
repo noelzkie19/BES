@@ -1,0 +1,248 @@
+import React from 'react'
+import HeaderPrintJob from './HeaderPrintJob'
+import {
+  Grid,
+  GridCellProps,
+  GridColumn as Column,
+} from '@progress/kendo-react-grid'
+import { IJobPurchaseData } from '../../models/job-model'
+import { dateFormat } from '../../../../shared/service/utils'
+import { transformResourcesOption, transformUserOption } from '../../transformers/job-transformer'
+
+interface IMyProps {
+  refs?: any
+  purchaseOrder: IJobPurchaseData[]
+  operations: any
+  jobDetails: any,
+  users: any,
+  resources: any
+}
+
+const PrintJobDetails: React.FC<IMyProps> = ({ refs, purchaseOrder, operations, jobDetails, users, resources }) => {
+  
+  const checkCell = (cellProps: GridCellProps) => (
+    <td className='k-command-cell' height={45}>
+      <div>{cellProps.dataItem[`${cellProps.field}Hr`]}</div>
+      <div>{
+        transformUserOption(users)
+          .find((c: any) => c.id === cellProps.dataItem[`${cellProps.field}OperatorId`])?.text
+      }</div>
+    </td>
+  )
+
+
+  return (
+    <div id='layoutPrint' ref={refs}>
+      <HeaderPrintJob refs={refs} purchaseOrder={purchaseOrder} operations={operations} jobDetails={jobDetails} />
+      <div className='printJob mt-5'>
+        <div className='row no-break'>
+          <div className='col-6'>
+            <div className='p-2 jobInformation'>
+              <div className='row'>
+                <div className={`col-4`}>Description:</div>
+                <div className='col'>
+                  {/* {jobDetails.description} */}
+                  {jobDetails != null
+                    ? <p>{jobDetails.description}</p>
+                    : <p>Description Placeholder</p>
+                  }
+                </div>
+              </div>
+              <div className='row'>
+                <div className={`col-4`}>Client:</div>
+                <div className='col'>
+                  {/* {jobDetails.client} */}
+                  {jobDetails != null
+                    ? <p>{jobDetails.client}</p>
+                    : <p>Client Placeholder</p>
+                  }
+                </div>
+              </div>
+              <div className='row'>
+                <div className={`col-4`}>Order:</div>
+                <div className='col'>
+                  {/* {jobDetails.orderNumber} */}
+                  {jobDetails != null
+                    ? <p>{jobDetails.orderNumber}</p>
+                    : <p>Order Placeholder</p>
+                  }
+                </div>
+              </div>
+              <div className='row'>
+                <div className={`col-4`}>Drawing:</div>
+                <div className='col'>
+<<<<<<< HEAD
+                  {
+                    jobDetails && (<p>{jobDetails.drawingNumber}</p>)
+                  }
+=======
+                  {jobDetails != null
+                    ? <p>{jobDetails.drawingNumber}</p>
+                    : <p></p>
+                  }
+                  {/* <p>{jobDetails.drawingNumber}</p> */}
+>>>>>>> 9fdbd4fd2f5a28b387b8cf26dfc865b997adab0e
+                </div>
+              </div>
+              <div className='row'>
+                <div className={`col-4`}>Revision:</div>
+                <div className='col'>
+<<<<<<< HEAD
+                  {
+                    jobDetails && (<p>{jobDetails.revisionNumber}</p>)
+                  }
+=======
+                 {jobDetails != null
+                    ? <p>{jobDetails.revisionNumber}</p>
+                    : <p></p>
+                  }
+                  {/* <p>{jobDetails.revisionNumber}</p> */}
+>>>>>>> 9fdbd4fd2f5a28b387b8cf26dfc865b997adab0e
+                </div>
+              </div>
+              <div className='row'>
+                <div className={`col-4`}>Quantity:</div>
+                <div className='col'>
+                  {/* {jobDetails.quantity} */}
+                  {jobDetails != null
+                    ? <p>{jobDetails.quantity}</p>
+                    : <p>Quantity Placeholder</p>
+                  }
+                </div>
+              </div>
+              <div className='row'>
+                <div className={`col-4`}>Date Due:</div>
+                <div className='col'>
+                  {/* {dateFormat(jobDetails.dueDate)} */}
+                  {jobDetails != null
+                    ? <p>{dateFormat(jobDetails.dueDate)}</p>
+                    : <p>Date Due Placeholder</p>
+                  }
+                </div>
+              </div>
+              <div className='row'>
+                <div className={`col-4`}>NCR Number:</div>
+                <div className='col'>
+                  {/* {jobDetails.ncrNumber} */}
+                  {jobDetails != null
+                    ? <p>{jobDetails.ncrNumber}</p>
+                    : <p>NCR Number Placeholder</p>
+                  }
+                </div>
+              </div>
+              <div className='row'>
+                <div className={`col-4`}>Over runs:</div>
+                <div className='col'>None</div>
+              </div>
+            </div>
+          </div>
+          <div className='col-6'>
+            <div className='row'>
+              <div className='poTblWrap col-12'>
+                <div className='jobDetailsHeading'>Purchase Order</div>
+                <Grid data={purchaseOrder}>
+                  <Column field='purchaseNumber' title='PO#' />
+                  <Column field='supplier' title='Supplier'/>
+                  <Column field='description' title='Description'/>
+                  <Column field='quantity' title='Qty' />
+                </Grid>
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col-12'>
+                <div style={{ height: 100 }} className='setupText'>
+                  Consumables Used:
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='row mt-4 no-break'>
+          <div className={`col`}>
+            <div className='setupText'>
+              <span className='jobDetailsHeading'>Setup Text:</span> 
+<<<<<<< HEAD
+              {jobDetails && (<p>{jobDetails.setupText}</p>)}
+=======
+              {jobDetails != null
+                    ? <p>{jobDetails.setupText}</p>
+                    : <p></p>
+              }
+              {/* {jobDetails.setupText} */}
+>>>>>>> 9fdbd4fd2f5a28b387b8cf26dfc865b997adab0e
+            </div>
+          </div>
+        </div>
+
+        <div className='row mt-4 no-break'>
+          <div className={`col`}>
+            <div className='jobDetailsHeading'>Job operations</div>
+            <Grid data={operations}>
+              <Column
+                field='number'
+                title='Operation Number'
+                width={70}
+              />
+              <Column
+                field='resourceId'
+                title='Resource'
+                width={95}
+                cell={(cellProps: GridCellProps) => (
+                  <td className='k-command-cell' height={45}>
+                    <div>{
+                      transformResourcesOption(resources)
+                        .find((c: any) => c.id === cellProps.dataItem.resourceId)?.text
+                    }</div>
+                  </td>
+                )}
+              />
+              <Column field='description' title='Description' width={200} />
+              <Column field='quantity' title='Quantity' width={70} />
+              <Column
+                field='expectedProcessTime'
+                title='Expected Process Time'
+                width={70}
+              />
+              <Column title='First Off Checks'>
+                <Column field='firstFoc' title='1st' width={95} cell={checkCell} />
+                <Column field='secondFoc' title='2nd' width={95} cell={checkCell} />
+                <Column field='thirdFoc' title='3rd' width={95} cell={checkCell} />
+                <Column field='fourthFoc' title='4th' width={95} cell={checkCell} />
+              </Column>
+              <Column title='Production Checks'>
+                <Column field='firstFoc' title='1st' width={95} cell={checkCell} />
+                <Column field='secondFoc' title='2nd' width={95} cell={checkCell} />
+                <Column field='thirdFoc' title='3rd' width={95} cell={checkCell} />
+                <Column field='fourthFoc' title='4th' width={95} cell={checkCell} />
+              </Column>
+              <Column field='firstFoc' title='Process Inspection Complete #' width={70} />
+            </Grid>
+           
+          </div>
+        </div>
+        <div className='row mt-4 no-break'>
+          <div className='col-6'>
+            <div className='finalInspection'>
+              <div className='jobDetailsHeading'>Final Inspection Declaration:</div>
+              <div className='jobDetailsBody'>
+                <span>The operator states that the final inspection of component/s has been completed as per details listed above and the item/s are ready for dispatch</span>
+              </div>
+              
+              <div className='row'>
+                <div className='col-6 text-center'>
+                  <p>Signature</p>
+                </div>
+                <div className='col-6 text-center'>
+                  <p>Date</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default PrintJobDetails

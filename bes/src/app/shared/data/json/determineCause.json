@@ -1,0 +1,18 @@
+[
+    {
+        "code": "humanError",
+        "value": "Human Error"
+    },
+    {
+        "code": "incorrectProcedure",
+        "value": "Incorrect Procedure"
+    },
+    {
+        "code": "lackOfProcedure",
+        "value": "Lack of Procedure"
+    },
+    {
+        "code": "other",
+        "value": "Other"
+    }
+]

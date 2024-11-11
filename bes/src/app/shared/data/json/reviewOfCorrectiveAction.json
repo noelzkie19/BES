@@ -1,0 +1,14 @@
+[
+    {
+        "code": "reviewProc",
+        "value": "Review Procedure"
+    },
+    {
+        "code": "reviewRes",
+        "value": "Review Resource"
+    },
+    {
+        "code": "other",
+        "value": "Other"
+    }
+]

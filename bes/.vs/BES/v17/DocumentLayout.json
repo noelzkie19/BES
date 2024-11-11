@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Noel Peterson\\Downloads\\NoelFiles\\bes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD63E544-AD3E-4A61-B167-66D5597E8954}|WebApi\\WebApi.csproj|c:\\users\\noel peterson\\downloads\\noelfiles\\bes\\webapi\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD63E544-AD3E-4A61-B167-66D5597E8954}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD63E544-AD3E-4A61-B167-66D5597E8954}|WebApi\\WebApi.csproj|c:\\users\\noel peterson\\downloads\\noelfiles\\bes\\webapi\\controllers\\purchaseordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD63E544-AD3E-4A61-B167-66D5597E8954}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\purchaseordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFD4BB1-2E87-48CF-A123-3576A6C6AF2D}|Application\\Application.csproj|c:\\users\\noel peterson\\downloads\\noelfiles\\bes\\application\\purchaseorderaggregate\\commands\\createpurchaseorder\\createpurchaseorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CFD4BB1-2E87-48CF-A123-3576A6C6AF2D}|Application\\Application.csproj|solutionrelative:application\\purchaseorderaggregate\\commands\\createpurchaseorder\\createpurchaseorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFD4BB1-2E87-48CF-A123-3576A6C6AF2D}|Application\\Application.csproj|c:\\users\\noel peterson\\downloads\\noelfiles\\bes\\application\\purchaseorderaggregate\\eventhandler\\supplieremailhistoryeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CFD4BB1-2E87-48CF-A123-3576A6C6AF2D}|Application\\Application.csproj|solutionrelative:application\\purchaseorderaggregate\\eventhandler\\supplieremailhistoryeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFD4BB1-2E87-48CF-A123-3576A6C6AF2D}|Application\\Application.csproj|c:\\users\\noel peterson\\downloads\\noelfiles\\bes\\application\\jobaggregate\\commands\\createjob\\createjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CFD4BB1-2E87-48CF-A123-3576A6C6AF2D}|Application\\Application.csproj|solutionrelative:application\\jobaggregate\\commands\\createjob\\createjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SupplierEmailHistoryEventHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Noel Peterson\\Downloads\\NoelFiles\\bes\\Application\\PurchaseOrderAggregate\\EventHandler\\SupplierEmailHistoryEventHandler.cs",
+              "RelativeDocumentMoniker": "Application\\PurchaseOrderAggregate\\EventHandler\\SupplierEmailHistoryEventHandler.cs",
+              "ToolTip": "C:\\Users\\Noel Peterson\\Downloads\\NoelFiles\\bes\\Application\\PurchaseOrderAggregate\\EventHandler\\SupplierEmailHistoryEventHandler.cs",
+              "RelativeToolTip": "Application\\PurchaseOrderAggregate\\EventHandler\\SupplierEmailHistoryEventHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T23:23:34.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateJob.cs",
+              "DocumentMoniker": "C:\\Users\\Noel Peterson\\Downloads\\NoelFiles\\bes\\Application\\JobAggregate\\Commands\\CreateJob\\CreateJob.cs",
+              "RelativeDocumentMoniker": "Application\\JobAggregate\\Commands\\CreateJob\\CreateJob.cs",
+              "ToolTip": "C:\\Users\\Noel Peterson\\Downloads\\NoelFiles\\bes\\Application\\JobAggregate\\Commands\\CreateJob\\CreateJob.cs",
+              "RelativeToolTip": "Application\\JobAggregate\\Commands\\CreateJob\\CreateJob.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAuwIIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T23:23:16.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreatePurchaseOrder.cs",
+              "DocumentMoniker": "C:\\Users\\Noel Peterson\\Downloads\\NoelFiles\\bes\\Application\\PurchaseOrderAggregate\\Commands\\CreatePurchaseOrder\\CreatePurchaseOrder.cs",
+              "RelativeDocumentMoniker": "Application\\PurchaseOrderAggregate\\Commands\\CreatePurchaseOrder\\CreatePurchaseOrder.cs",
+              "ToolTip": "C:\\Users\\Noel Peterson\\Downloads\\NoelFiles\\bes\\Application\\PurchaseOrderAggregate\\Commands\\CreatePurchaseOrder\\CreatePurchaseOrder.cs",
+              "RelativeToolTip": "Application\\PurchaseOrderAggregate\\Commands\\CreatePurchaseOrder\\CreatePurchaseOrder.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwEQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T23:22:47.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PurchaseOrderController.cs",
+              "DocumentMoniker": "C:\\Users\\Noel Peterson\\Downloads\\NoelFiles\\bes\\WebApi\\Controllers\\PurchaseOrderController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\PurchaseOrderController.cs",
+              "ToolTip": "C:\\Users\\Noel Peterson\\Downloads\\NoelFiles\\bes\\WebApi\\Controllers\\PurchaseOrderController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\PurchaseOrderController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwBQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T23:22:34.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthenticateController.cs",
+              "DocumentMoniker": "C:\\Users\\Noel Peterson\\Downloads\\NoelFiles\\bes\\WebApi\\Controllers\\AuthenticateController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\AuthenticateController.cs",
+              "ToolTip": "C:\\Users\\Noel Peterson\\Downloads\\NoelFiles\\bes\\WebApi\\Controllers\\AuthenticateController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\AuthenticateController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAYwGUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T03:25:29.663Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

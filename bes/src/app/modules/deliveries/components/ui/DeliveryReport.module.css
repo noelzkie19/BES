@@ -1,0 +1,14 @@
+.deliveryReport {
+  padding: 40px;
+  font-size: 12px;
+  width: 100%;
+}
+
+.deliveryReport b {
+  font-weight: bold;
+}
+.deliveryReport table th,
+.deliveryReport table td {
+  border: 1px solid #000;
+  padding: 2px;
+}

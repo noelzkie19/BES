@@ -1,0 +1,18 @@
+[
+    {
+        "code": "internal",
+        "value": "Internal Complaint"
+    },
+    {
+        "code": "external",
+        "value": "External Complaint"
+    },
+    {
+        "code": "internalnc",
+        "value": "Internal NC"
+    },
+    {
+        "code": "externalnc",
+        "value": "External NC"
+    }
+]

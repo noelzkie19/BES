@@ -1,0 +1,12 @@
+C:\Users\Noel\Documents\bes-management-system\src\Domain\bin\Release\net6.0\BES.Domain.deps.json
+C:\Users\Noel\Documents\bes-management-system\src\Domain\bin\Release\net6.0\BES.Domain.dll
+C:\Users\Noel\Documents\bes-management-system\src\Domain\bin\Release\net6.0\BES.Domain.pdb
+C:\Users\Noel\Documents\bes-management-system\src\Domain\obj\Release\net6.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Noel\Documents\bes-management-system\src\Domain\obj\Release\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noel\Documents\bes-management-system\src\Domain\obj\Release\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Noel\Documents\bes-management-system\src\Domain\obj\Release\net6.0\Domain.AssemblyInfo.cs
+C:\Users\Noel\Documents\bes-management-system\src\Domain\obj\Release\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Noel\Documents\bes-management-system\src\Domain\obj\Release\net6.0\BES.Domain.dll
+C:\Users\Noel\Documents\bes-management-system\src\Domain\obj\Release\net6.0\refint\BES.Domain.dll
+C:\Users\Noel\Documents\bes-management-system\src\Domain\obj\Release\net6.0\BES.Domain.pdb
+C:\Users\Noel\Documents\bes-management-system\src\Domain\obj\Release\net6.0\ref\BES.Domain.dll
